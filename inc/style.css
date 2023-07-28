@@ -702,7 +702,7 @@ a:hover {
   }
 }
 
-/*Mobile View*/
+/*responsive css start*/
 
 @media (max-width: 1200) {
   img.img-2 {
@@ -864,18 +864,17 @@ a:hover {
   }
 }
 
-/* responsive css start */
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 576) {
   .footer2,
   .footer3,
   .footer4 {
     text-align: center;
     margin: auto;
   }
-}
-
-@media screen and (max-width: 768) {
+  .Subscribe-form {
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -884,9 +883,6 @@ a:hover {
     padding-left: 0;
     text-align: center;
   }
-}
-
-@media screen and (max-width: 1200px) {
 }
 
 /* responsive css end */
