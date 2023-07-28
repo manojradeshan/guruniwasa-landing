@@ -108,6 +108,7 @@ img.guruniwasa-logo {
   color: #fff;
   font-family: "Merriweather Sans", sans-serif;
   line-height: 3;
+  transition: all 0.5s ease-in-out;
 }
 
 .home-contact a i {
@@ -119,7 +120,31 @@ img.guruniwasa-logo {
   color: #fff;
   background: #604626;
   border-radius: 25px;
+  transition: all 0.5s ease-in-out;
 }
+
+.phone-icon:hover {
+  background: #fff;
+  border: 1px solid #604226;
+}
+
+.home-contact .whatsapp-icon:hover {
+  background: #fff;
+  border: 1px solid #00b731;
+}
+
+.phone-icon a:hover {
+  color: #604226;
+}
+
+.whatsapp-icon a:hover {
+  color: #00b731;
+}
+
+/* .phone-icon a,
+.whatsapp-icon a {
+  padding: 15px 75px;
+} */
 
 .home-contact .phone-icon a i.home-icon {
   color: #604626;
@@ -142,6 +167,7 @@ img.guruniwasa-logo {
   color: #fff;
   background: #00b731;
   border-radius: 25px;
+  transition: all 0.5s ease-in-out;
 }
 
 .whatsapp-icon-border {
@@ -184,6 +210,21 @@ span.whatsapp-sub-border {
   color: #fff;
   background: #444444;
   border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+}
+
+.home-contact .phone-numbers:hover {
+  color: #444444;
+  background: #a4a4a4;
+  border: 1px solid #444444;
+}
+
+.home-contact .phone-numbers a {
+  color: #fff;
+}
+
+.home-contact .phone-numbers:hover .phone-numbers a {
+  color: #444444;
 }
 
 .home-contact a.home-icon {
@@ -199,8 +240,8 @@ section.home-carousel::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./img/Terachers_Meeting/Guru_Niwasa_7.jpg");
-  background-attachment: fixed;
+  background-image: url("./img/Terachers_Meeting/Guru_Niwasa_bg2.jpg");
+  /* background-attachment: fixed; */
   background-color: #fff;
   /* Set the background color to match the image's background */
   opacity: 0.2;
@@ -226,8 +267,8 @@ section#gallery::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./img/Terachers_Meeting/Guru_Niwasa_7.jpg");
-  background-attachment: fixed;
+  background-image: url("./img/Terachers_Meeting/Guru_Niwasa_bg2.jpg");
+  /* background-attachment: fixed; */
   background-color: #fff;
   /* Set the background color to match the image's background */
   opacity: 0.2;
@@ -242,9 +283,7 @@ section#gallery::before {
 
 /* gallery css end */
 
-
 /* about us css start */
-
 
 section#about-us::before {
   content: "";
@@ -255,8 +294,8 @@ section#about-us::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./img/Terachers_Meeting/Guru_Niwasa_7.jpg");
-  background-attachment: fixed;
+  background-image: url("./img/Terachers_Meeting/Guru_Niwasa_bg2.jpg");
+  /* background-attachment: fixed; */
   background-color: #fff;
   /* Set the background color to match the image's background */
   opacity: 0.2;
@@ -288,7 +327,6 @@ h2.page-heading {
 
 /* about us css end */
 
-
 /* carousel css start */
 
 .item {
@@ -310,7 +348,7 @@ h2.page-heading {
 
 .owl-theme .owl-nav [class*="owl-"]:hover {
   background: #b1b1b1c9;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -324,7 +362,7 @@ h2.page-heading {
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
-  padding-bottom: 15px;
+  padding: 15px 0;
 }
 
 .footer1 p,
@@ -374,6 +412,62 @@ svg:not(:root).svg-inline--fa {
 
 .footer-wrapper a:hover {
   color: #b3bbc1;
+}
+
+/* Wobble Skew */
+
+@-webkit-keyframes hvr-wobble-skew {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+
+@keyframes hvr-wobble-skew {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
 }
 
 .hvr-wobble-skew:hover,
@@ -446,22 +540,353 @@ a:hover {
 
 /* footer css end */
 
+/* Preloader */
+
+.ctn-preloader {
+  align-items: center;
+  cursor: none;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 900;
+}
+
+.ctn-preloader .animation-preloader {
+  position: absolute;
+  z-index: 100;
+}
+
+.ctn-preloader .animation-preloader .spinner {
+  /*animation: spinner 1s infinite linear;*/
+  /*border-radius: 50%;*/
+  /*border: 3px solid rgba(0, 0, 0, 0.2);*/
+  /*border-top-color: #000000;*/
+  /*height: 9em;*/
+  /*margin: 0 auto 3.5em auto;*/
+  /*width: 9em;*/
+  margin: 0 auto 3.5em auto;
+  background: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 279px;
+  width: 400px;
+}
+
+.ctn-preloader .animation-preloader .txt-loading {
+  font: bold 5em "Montserrat", sans-serif;
+  text-align: center;
+  user-select: none;
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:before {
+  animation: letters-loading 4s infinite;
+  color: #000000;
+  content: attr(data-text-preloader);
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: rotateY(-90deg);
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading {
+  color: rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(2):before {
+  animation-delay: 0.2s;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(3):before {
+  animation-delay: 0.4s;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(4):before {
+  animation-delay: 0.6s;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(5):before {
+  animation-delay: 0.8s;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(6):before {
+  animation-delay: 1s;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(7):before {
+  animation-delay: 1.2s;
+}
+
+.ctn-preloader .loader-section {
+  background-color: #ffffff;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: calc(50% + 1px);
+}
+
+.ctn-preloader .loader-section.section-left {
+  left: 0;
+}
+
+.ctn-preloader .loader-section.section-right {
+  right: 0;
+}
+
+.loaded .animation-preloader {
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.loaded .loader-section.section-left {
+  transform: translateX(-101%);
+  transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
+}
+
+.loaded .loader-section.section-right {
+  transform: translateX(101%);
+  transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
+}
+
+.stats span {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #000;
+  position: absolute;
+  margin-top: -90px;
+  margin-left: 75px;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes letters-loading {
+  0%,
+  75%,
+  100% {
+    opacity: 0;
+    transform: rotateY(-90deg);
+  }
+
+  25%,
+  50% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+/*Mobile View*/
+
+@media (max-width: 1200) {
+  img.img-2 {
+    left: -45%;
+  }
+
+  .image-content {
+    margin: 59px 3px 293px 306px;
+  }
+
+  img.img-responsive {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  img.img-2 {
+    left: -50.5%;
+    top: 56.6%;
+  }
+
+  .image-content {
+    margin: 59px 3px 297px 329px;
+  }
+
+  img.img-responsive {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: calc(100% / 2);
+  }
+
+  img.img-responsive {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  /* h1.main-title {
+    left: 50%;
+    font-size: 59px;
+  } */
+
+  img.img-2 {
+    left: -71.5%;
+    top: 56.6%;
+  }
+
+  img.img-responsive {
+    width: 100%;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1190px) {
+  .image-content {
+    position: relative;
+    margin: 59px 3px 281px 480px;
+  }
+
+  img.img-responsive {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-content {
+    margin: 37px 8px 280px 262px;
+  }
+
+  img.img-1 {
+    height: 400px;
+  }
+
+  img.img-2 {
+    left: -53%;
+    width: 100%;
+    height: 400px;
+    top: 56.6%;
+  }
+  /* 
+  h1.main-title {
+    top: 25%;
+    left: 50%;
+    font-size: 40px;
+  } */
+
+  img.img-responsive {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ctn-preloader .animation-preloader .spinner {
+    height: 90px;
+    width: 100%;
+  }
+
+  img.img-responsive {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ctn-preloader .animation-preloader .txt-loading {
+    font: bold 3.5em "Montserrat", sans-serif;
+  }
+
+  img.img-responsive {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  img.guruniwasa-logo {
+    border: 1rem solid burlywood;
+  }
+
+  .image-content {
+    margin: 18px 3px 193px 84px;
+  }
+
+  img.img-1 {
+    width: 100%;
+    height: 257px;
+  }
+
+  img.img-2 {
+    left: -35%;
+    width: 100%;
+    height: 257px;
+    top: 56.6%;
+  }
+
+  h1.main-title {
+    /* top: 25%;
+    left: 50%; */
+    font-size: 3rem;
+  }
+
+  img.img-responsive {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ctn-preloader .animation-preloader .txt-loading {
+    font: bold 2em "Montserrat", sans-serif;
+  }
+
+  .image-content {
+    margin: 18px 3px 193px 96px;
+  }
+
+  img.img-responsive {
+    width: 100%;
+  }
+}
+
 /* responsive css start */
 
-@media screen and (max-width: 576) {}
+@media screen and (max-width: 576) {
+  .footer2,
+  .footer3,
+  .footer4 {
+    text-align: center;
+    margin: auto;
+  }
+}
 
-@media screen and (max-width: 768) {}
+@media screen and (max-width: 768) {
+}
 
 @media screen and (max-width: 992px) {
-
   h1.main-title {
     padding-top: 10%;
     padding-left: 0;
     text-align: center;
   }
-
 }
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+}
 
 /* responsive css end */

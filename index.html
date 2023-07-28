@@ -32,12 +32,60 @@
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
     </script>
     <!-- main css -->
-    <link rel="stylesheet" href="./inc/style.css">
+    <!-- <link rel="stylesheet" href="hover.css"> -->
+    <link rel="stylesheet" href="inc/style.css">
 </head>
 
 <body>
+    <!-- Preloader -->
+    <section>
+        <div id="preloader">
+            <div id="ctn-preloader" class="ctn-preloader">
+                <div class="animation-preloader">
+                    <div class="spinner"></div>
+                    <div class="txt-loading">
+                        <span data-text-preloader="L" class="letters-loading">
+                            L
+                        </span>
+                        <span data-text-preloader="O" class="letters-loading">
+                            O
+                        </span>
+                        <span data-text-preloader="A" class="letters-loading">
+                            A
+                        </span>
+                        <span data-text-preloader="D" class="letters-loading">
+                            D
+                        </span>
+                        <span data-text-preloader="I" class="letters-loading">
+                            I
+                        </span>
+                        <span data-text-preloader="N" class="letters-loading">
+                            N
+                        </span>
+                        <span data-text-preloader="G" class="letters-loading">
+                            G
+                        </span>
+
+
+                        <span data-text-preloader="." class="letters-loading">
+                            .
+                        </span>
+                        <span data-text-preloader="." class="letters-loading">
+                            .
+                        </span>
+                        <span data-text-preloader="." class="letters-loading">
+                            .
+                        </span>
+
+                    </div>
+                </div>
+                <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
+            </div>
+        </div>
+    </section>
     <header>
-        <div class="container-fluid px-sm-2 fixed-top bg-light opacity-75  z-3">
+        <div class="container-fluid px-sm-2 fixed-top opacity-75  z-3">
             <div class="row">
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
@@ -94,7 +142,7 @@
                                         </div>
                                         <div class="home-contact px-5">
                                             <div class="row">
-                                                <div class="col-lg-3 col-md-6 phone-icon-box py-1">
+                                                <div class="col-lg-3 col-md-6 phone-icon-box py-1  hvr-wobble-skew">
                                                     <div class="phone-icon position-relative">
                                                         <a href="tel:+">
                                                             <div class="phone-icon-boder position-absolute">
@@ -104,7 +152,7 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-3 col-md-6 whatsapp-icon-box py-1">
+                                                <div class="col-lg-3 col-md-6 whatsapp-icon-box py-1  hvr-wobble-skew">
                                                     <div class="whatsapp-icon position-relative">
                                                         <a href="http://" target="_blank" rel="noopener noreferrer">
                                                             <div class="whatsapp-icon-border position-absolute">
@@ -116,14 +164,14 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-3 col-md-6 phone-numbers-box py-1">
+                                                <div class="col-lg-3 col-md-6 phone-numbers-box py-1 hvr-wobble-skew">
                                                     <div class="phone-numbers">
-                                                        <a href="tel:+772879970">077 287 9970</a> |
+                                                        <a href="tel:+94772879970">077 287 9970</a> |
                                                         <a href="tel:+94767681431">076 768 1431</a>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3 col-md-6 py-1">
-                                                    <ul class="d-flex social.icon">
+                                                    <ul class="social.icon">
                                                         <li class="px-2">
                                                             <a class="hvr-wobble-skew home-icon" href="" target="_blank"
                                                                 title="Email">
@@ -177,7 +225,7 @@
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6 col-sm-12">
                                         <div class="introduction-video">
-                                            <iframe width="100%" height="315"
+                                            <iframe width="100%" height="220"
                                                 src="https://www.youtube.com/embed/F7RJr2tqVXY"
                                                 title="YouTube video player" frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -188,9 +236,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row p-lg-5 p-md-0">
+                        <div class="row">
                             <div class="col">
-                                <div class="owl-carousel owl-theme">
+                                <div id="owl-carousel1" class="owl-carousel owl-theme">
                                     <div class="item">
                                         <iframe width="100%" height="auto"
                                             src="https://www.youtube.com/embed/F7RJr2tqVXY" title="YouTube video player"
@@ -248,7 +296,7 @@
 
                 <section class="post-img-box position-relative pt-5 px-5">
                     <div class="container-fluid">
-                        <div class="owl-carousel owl-theme">
+                        <div id="owl-carousel2" class="owl-carousel owl-theme">
                             <div class="item">
                                 <img class="owl-lazy" src="./inc/img/Other_Post/Other_Details_1.jpg" alt="guruniwasa" />
                             </div>
@@ -284,7 +332,7 @@
                     <div class="row pt-5">
                         <div class="col">
 
-                            <div class="owl-carousel owl-theme">
+                            <div id="owl-carousel3" class="owl-carousel owl-theme">
                                 <div class="item">
                                     <img class="owl-lazy py-3" src="./inc/img/Terachers_Meeting/Guru_Niwasa_1.jpg"
                                         alt="guruniwasa" />
@@ -377,7 +425,7 @@
             <section id="about-us" class=" position-relative p-5">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-8 col-sm-12">
+                        <div class="col-lg-8 col-md-12 col-sm-12">
                             <h2 class="page-heading">
                                 ABOUT US
                             </h2>
@@ -419,17 +467,17 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-12">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
                             <div class="row">
-                                <div class="col my-3">
+                                <div class="col-12 my-3">
                                     <img src="./inc/img/Guru_Niwasa_Institute/Guru_Niwasa_20.jpg" alt="guruniwasa"
-                                        class="img-fluid" style="width: fit-content;">
+                                        class="img-fluid mx-auto d-block" style="width: fit-content;">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col my-3">
+                                <div class="col-12 my-3">
                                     <img src="./inc/img/Guru_Niwasa_Institute/Guru_Niwasa_05.jpg" alt="guruniwasa"
-                                        class="img-fluid" style="width: fit-content;">
+                                        class="img-fluid mx-auto d-block" style="width: fit-content;">
                                 </div>
                             </div>
                         </div>
@@ -484,7 +532,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 footer4 ">
                             <h4>NEWSLETTER</h4>
-                            <form action="" class="Subscribe-form d-flex">
+                            <form action="" class="Subscribe-form d-flex" style="width: 250px;">
                                 <input type="email" name="your-email" value=""
                                     placeholder="Subscribe to our Newsletter">
                                 <button type="submit" class="submit-btn border-0 bg-transparent text-light">
@@ -492,30 +540,30 @@
                                 </button>
                             </form>
                             <h4>FOLLOW</h4>
-                            <div class="row">
-                                <div class="col hvr-wobble-skew text-center rounded-circle p-0">
+                            <ul class="p-0">
+                                <li class="col hvr-wobble-skew text-center rounded-circle p-0">
                                     <a class="hvr-wobble-skew" href="" target="_blank" title="Facebook">
                                         <i class="fa-brands fa-facebook-f footer-icon"></i>
                                     </a>
-                                </div>
-                                <div class="col hvr-wobble-skew text-center rounded-circle p-0">
+                                </li>
+                                <li class="col hvr-wobble-skew text-center rounded-circle p-0">
                                     <a class="hvr-wobble-skew" href="" target="_blank" title="Twitter">
                                         <i class="fa-brands fa-twitter footer-icon"></i>
                                     </a>
-                                </div>
-                                <div class="col hvr-wobble-skew text-center rounded-circle p-0">
+                                </li>
+                                <li class="col hvr-wobble-skew text-center rounded-circle p-0">
                                     <a class="hvr-wobble-skew" href="" target="_blank" title="linkedin">
                                         <i class="fa-brands fa-linkedin-in footer-icon"></i>
                                     </a>
-                                </div>
-                                <div class="col hvr-wobble-skew text-center rounded-circle p-0">
+                                </li>
+                                <li class="col hvr-wobble-skew text-center rounded-circle p-0">
                                     <a class="hvr-wobble-skew"
                                         href="https://www.youtube.com/@smartsciencewithabhimansir2096" target="_blank"
                                         title="Youtube">
                                         <i class="fa-brands fa-youtube footer-icon"></i>
                                     </a>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -526,7 +574,7 @@
                         <div class="col-xs-12 ">
                             <p>
                                 Copyrights <span id="getYear"></span>
-                                � Guruniwasa | Website by
+                                Guruniwasa | Website by
                                 <a target="_blank" title="Click to visit" href="https://yogeemedia.com/">
                                     yogeemedia.com
                                 </a>
