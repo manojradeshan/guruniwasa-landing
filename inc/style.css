@@ -74,7 +74,12 @@ h1.main-title span {
 img.guruniwasa-logo {
   max-width: 70%;
   margin: 15% 0;
-  border: 3rem solid burlywood;
+  border: 3rem solid #f5ce9d;
+  transition: all 1s ease-in-out;
+}
+
+.guruniwasa-logo.img-fluid:hover {
+  transform: scale(1.1);
 }
 
 .home-contact ul li {
@@ -124,12 +129,12 @@ img.guruniwasa-logo {
 }
 
 .phone-icon:hover {
-  background: #fff;
+  background: #60422696;
   border: 1px solid #604226;
 }
 
 .home-contact .whatsapp-icon:hover {
-  background: #fff;
+  background: #00b7314f;
   border: 1px solid #00b731;
 }
 
@@ -375,6 +380,11 @@ h2.page-heading {
   color: #fff;
   margin: 0;
   padding-bottom: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer3 ul li:hover {
+  padding-left: 10px;
 }
 
 .Subscribe-form {
