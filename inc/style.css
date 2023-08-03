@@ -218,6 +218,11 @@ span.whatsapp-sub-border {
   transition: all 0.5s ease-in-out;
 }
 
+.row.phone-numbers {
+  border-radius: 100px;
+  margin: auto;
+}
+
 .home-contact .phone-numbers:hover {
   color: #444444;
   background: #a4a4a4;
@@ -745,7 +750,7 @@ a:hover {
 
 @media screen and (max-width: 900px) {
   .carousel img {
-    width: calc(100% / 2);
+    width: calc(70%);
   }
 
   img.img-responsive {
